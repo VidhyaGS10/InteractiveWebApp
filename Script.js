@@ -4,18 +4,18 @@ let hourNow = today.getHours();
 
 let greeting;
 
-greeting = "Good Evening こんばんは！";
+greeting = "Good Evening";
 if (hourNow >= 18) {
   document.body.className = "evening";
 }
 
 else if (hourNow <= 12) {
-  greeting = "Good Morning　おはようございます！";
+  greeting = "Good Morning";
   document.body.className = "morning";
 }
 
 else {
-  greeting = "Welcome　こんにちは！";
+  greeting = "Welcome";
   document.body.className = "day";
 }
 
