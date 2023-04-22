@@ -1,3 +1,4 @@
+/* BASIC STYLING */
 html, body{
     margin: 0;
     padding: 0;
@@ -6,8 +7,14 @@ html, body{
 }
 
 .imgrsp{
-    width: 400px;
+    width: 360px;
     height: auto;
+    margin: auto auto;
+}
+
+.imgContact{
+    width: 149px;
+    height: 149px;
     margin: auto auto;
 }
 
@@ -23,7 +30,7 @@ h3{
     margin: 0;
 }
 
-button{
+.button{
     padding: 15px;
     background: #BC212E;
     color: white;
@@ -60,6 +67,7 @@ input {
     margin: auto auto;
     font-size:30px;
     cursor:pointer;
+    overflow-x: hidden;
   }
 
   .highlight{
@@ -82,16 +90,12 @@ input {
   }
   
   .japanBlurb {
-    padding: 8px 8px 8px 32px;
+    padding: 8px 8px 15px 32px;
     text-decoration: none;
     font-size: 22px;
     color: #000000;
     display: block;
     transition: 0.3s;
-  }
-
-  .japanBlurb h3 h5{
-    color: #BC212E;
   }
   
   .sidenav .closebtn {
@@ -107,4 +111,279 @@ input {
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav p {font-size: 18px;}
+  }
+
+  .container{
+    width: 80%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin: auto;
+  }
+  
+  form{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+  }
+  
+  form h3{
+    color: grey;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  form input, form textarea{
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: #FFF3F4;
+    font-size: 16px;
+  }
+
+  .tab {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 200;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+
+.tab button {
+    background-color: inherit;
+    width: 33.3333%;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}
+
+/* Fade in tabs */
+
+@-webkit-keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  section {
+    position: relative;
+    min-height: 85vh;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    perspective: 1000px;
+    padding: 20px 35px;
+  }
+  /* section::before {
+    content: "\21D0";
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    left: 10px;
+    top: 250px;
+  }
+  section::after {
+    content: "\21D2";
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    left: 350px;
+    top: 250px;
+  } */
+  .container {
+    position: relative;
+    height: 460px;
+    width: 302px;
+    z-index: 100;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+  }
+  .container:hover {
+    transform: rotateY(180deg);
+  }
+  .container .card {
+    position: absolute;
+    height: 95%;
+    width: 95%;
+    top: 15%;
+    left: 0%;
+    padding: 25px;
+    border-radius: 25px;
+    backdrop-filter: blur(25px);
+    background: rgb(255, 255, 255);
+    box-shadow: 0 10px 20px rgb(0, 0, 0);
+    border: 3px solid #BC212E;
+    backface-visibility: hidden;
+  }
+  .front-face header,
+  .front-face .logo {
+    display: block;
+    text-align: center;
+  }
+  .front-face header {
+    justify-content: space-between;
+  }
+  .front-face .logo img {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    text-align: center;
+    /* margin-right: 10px; */
+  }
+  
+  .heading {
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    color: #bc212e;
+  }
+  
+  .head {
+    font-weight: 800;
+    text-align: center;
+    margin: 0;
+    display: grid;
+    padding: 30px 10px 0px 10px;
+  }
+  
+  .logo img {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    /* margin-right: 10px; */
+  }
+  
+  
+  h5 {
+    font-size: 14px;
+    font-weight: 200;
+    color: rgba(188, 33, 46, 0.55);
+    text-align: center;
+  }
+  .front-face .chip {
+    width: 50px;
+  }
+  .front-face .card-details {
+    display: block;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  h6 {
+    font-size: 10px;
+    font-weight: 400;
+  }
+  h5.number {
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+  h5.name {
+    margin-top: 20px;
+  }
+  .card.back-face {
+    border: none;
+    padding: 15px 25px 25px 25px;
+    transform: rotateY(180deg);
+    border: 3px solid #BC212E;
+  }
+  .card.back-face h6 {
+    font-size: 8px;
+  }
+  /* .card.back-face h5 {
+    font-size: 8px;
+    margin-top: 15px;
+  }*/ 
+  .carousel-button {
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    top: 55%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, .5);
+    cursor: pointer;
+    border-radius: .25rem;
+    padding: 0 .5rem;
+    background-color: #BC212E;
+  }
+  
+  .carousel-button:hover,
+  .carousel-button:focus {
+    color: white;
+    background-color: rgba(0, 0, 0, .2);
+  }
+  
+  .carousel-button:focus {
+    outline: 1px solid black;
+  }
+  
+  .carousel-button.prev {
+    left: 0rem;
+  }
+  
+  .carousel-button.next {
+    right: 0rem;
+  }
+  
+  .nextPage{
+    font-size: 10px;
+    color: #BC212E;
   }

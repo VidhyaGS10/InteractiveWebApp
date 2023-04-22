@@ -13,7 +13,7 @@
 <body>
 <div class="grid">
     <!-- Loading page -->
-    <div class="cell col1 image">
+    <div class="cell col1 image" id="loadingPage">
         <img src="imgs/Logo_1.png" alt="Benkyou WebApp Logo" class="imgrsp">
         <br>
         <h3 id="greeting"> </h3>
@@ -21,10 +21,16 @@
         <input type="text" name="NAME" id="fname">
         <br>
         <br>
-        <button type="submit" onclick="storefname()">START LEARNING!</button>
+        <button type="submit" onclick="storefname() " class="button" id="startLearn">START LEARNING!</button>
+    </div>
+
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'homePage')"> HOME </button>
+        <button class="tablinks" onclick="openCity(event, 'learn')">LEARN </button>
+        <button class="tablinks" onclick="openCity(event, 'connect')">CONNECT</button>
     </div>
     <!-- Home page -->
-    <div class="cell col1">
+    <div id="homePage" class="tabcontent">
         <h3 id="greeting"> </h3>
         <h4 id="fNameStored"></h4>
         <div id="mySidenav" class="sidenav">
@@ -47,12 +53,67 @@
         </div>
         <span class="japan" onclick="openNav()">
             <span class="text"> Learn about 
+            <br>
             <span class="highlight">JAPAN</span>
             </span>
         </span>
-
+        <br>
+        <br>
+        <span class="japan" id="chapterLearn">
+            <span class="text"> Learn Japanese 
+            <br>
+            <span class="highlight">BEGINNER</span>
+            </span>
+        </a>
     </div>
 
+    <!-- Learn Tab -->
+    <div id="learnPage" class="tabcontent">
+        <section>
+            <button class="carousel-button prev" data-carousel-button="next">&#8656;</button>
+            <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+            <div class="container">
+              <div class="card front-face">
+                <header>
+                  <span class="logo">
+                    <br><img src="imgs/a.png" alt="" />          
+                  </span>
+                </header>
+                
+                <div class="card-details">
+                  <div class="name-number">
+                    <h5> tap on the image to flip</h5>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="card back-face">
+                <span class="logo">
+                  <img src="imgs/a_stroke.png" alt="" />
+              </span>
+              <br>
+              <h5> tap outside the card to flip it back</h5>
+            </div>
+            <span class="nextPage" id="nextPage"> NEXT LESSON </span>
+          </div>
+        </section>
+        <br> 
+    </div>
+
+    <!-- Connect page -->
+    <div id="connectPage" class="tabcontent">
+        <div class="container">
+        <img src="imgs/Logo_1.png" alt="Benkyou WebApp Logo" class="imgContact">
+        <br>  
+        <form action="#" class="form-contact">
+            <h2>Join other learners Today!</h2>
+            <input type="text" id="fname" placeholder="First Name">
+            <input type="text" id="lname" placeholder="Last Name">
+            <input type="email" id="email" placeholder="email ID">
+            <button type="submit" value="Send" class="button"> JOIN </button>
+          </form>
+        </div>
+    </div>
 
     <script src="Script.js"></script>
 </div>
