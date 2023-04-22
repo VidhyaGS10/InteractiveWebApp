@@ -12,8 +12,45 @@
 </head>
 <body>
 <div class="grid">
+    <!-- Loading page -->
     <div class="cell col1 image">
         <img src="imgs/Logo_1.png" alt="Benkyou WebApp Logo" class="imgrsp">
+        <br>
+        <h3 id="greeting"> </h3>
+        <br>
+        <input type="text" name="NAME" id="fname">
+        <br>
+        <br>
+        <button type="submit" onclick="storefname()">START LEARNING!</button>
+    </div>
+    <!-- Home page -->
+    <div class="cell col1">
+        <h3 id="greeting"> </h3>
+        <h4 id="fNameStored"></h4>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <span class="japanBlurb">
+            <h4>JAPAN 日本 </h4>
+            <br>
+            <h5> Culture, places & more. </h5>
+            <p>
+                Japan is a beautiful country famous for its lush landscape, delicious 
+                food, and well-mannered people. Here are some examples of essays about Japan.
+                <br> A developed country in Asia known as the “land of the rising sun,” Japan has become a 
+                hot commodity for tourism and business. Japan is truly a sight to behold, from its beautiful 
+                cherry blossoms, efficient public transportation system, and delicious food. 
+                <br> Japan’s architecture, art, traditions, crafts. Also, its worldwide known pop culture (including 
+                manga, anime, and video games). It’s something that definitely only Japan can offer. Its a
+                country with unique characteristics.
+            </p>
+            </span>
+        </div>
+        <span class="japan" onclick="openNav()">
+            <span class="text"> Learn about 
+            <span class="highlight">JAPAN</span>
+            </span>
+        </span>
+
     </div>
 
 

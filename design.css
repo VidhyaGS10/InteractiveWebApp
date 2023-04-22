@@ -2,6 +2,7 @@ html, body{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .imgrsp{
@@ -17,6 +18,93 @@ html, body{
 
 h3{
     text-align: center;
-    font-size: 2rem;
-    padding:  10px;
+    font-size: 2.5rem;
+    padding:  5px;
+    margin: 0;
 }
+
+button{
+    padding: 15px;
+    background: #BC212E;
+    color: white;
+    font-size: 18px;
+    line-height: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    border-radius: 30px;
+}
+
+input {
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: #ffc1c6;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+
+  .japan{
+    width: 313px;
+    height: 76px;
+    background: #FFF3F4;
+    padding: 10px;
+    border: solid 3px #BC212E;
+    border-radius: 12px;
+    display: block;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: auto auto;
+    font-size:30px;
+    cursor:pointer;
+  }
+
+  .highlight{
+    font-weight: 800;
+    font-size: 30px;
+    margin: 0;
+  }
+
+  .sidenav {
+    height: 100%;
+    width: 400px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .japanBlurb {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .japanBlurb h3 h5{
+    color: #BC212E;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    text-decoration: none;
+    color: #BC212E;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav p {font-size: 18px;}
+  }

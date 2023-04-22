@@ -19,7 +19,34 @@ else {
   document.body.className = "day";
 }
 
-document.write('<h3>' + greeting + '</h3>');
+// document.write('<h3>' + greeting + '</h3>');
+
+document.getElementById("greeting").innerHTML = greeting;
+
+let res = document.getElementById("fname");
+
+var storefname = () => {
+//check if browser has storage
+if (typeof (Storage) !== "undefined") {
+    //store
+    localStorage.setItem("firstName", "Vidhya");
+    //retrieve
+    res.innerHTML = localStorage.getItem("first_name");
+} else {
+    res.innerHTML = "Sorry your browser does not have storage."
+}
+
+// document.getElementById("fNameStored").innerHTML= res.innerHTML;
+
+}
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
 
 function Character(){
   var xhttp = new XMLHttpRequest();//using AJAX to send a request to retrieve data from moves.json
