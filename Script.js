@@ -1,6 +1,6 @@
 // This is for the dynamic greeting
 let today = new Date();
-
+let cardNumber = 0;
 let hourNow = today.getHours();
 
 let greeting;
@@ -31,12 +31,13 @@ var storefname = () => {
 //check if browser has storage
 if (typeof (Storage) !== "undefined") {
     //store
-    localStorage.setItem("firstName", "Vidhya");
-    //retrieve
-    res.innerHTML = localStorage.getItem("first_name");
+    localStorage.setItem("firstName", res.value);
 } else {
-    res.innerHTML = "Sorry your browser does not have storage."
+  console.log("Sorry your browser does not have storage.");
+  
 }
+
+console.log("res.value");
 
 // document.getElementById("fNameStored").innerHTML= res.innerHTML;
 
@@ -58,13 +59,34 @@ function Character(){
         for (var i = 0; i < hiragana.length; i++){
           console.log(hiragana[i].SubCategory)
       }
-      }
+       let nextImageFront = document.getElementById('nextImageFront')  
+       let nextImageBack = document.getElementById('nextImageBack')  
+       nextImageFront.src = hiragana[cardNumber].Image_1;
+       nextImageBack.src = hiragana[cardNumber].Image_2;
+    }
   }
   xhttp.open("GET", "Script_2.json", true);
   xhttp.send();
 }
 
-Character()
+function nextCard(){
+  if (cardNumber >= 9){
+    cardNumber = 9;
+  }else{
+    cardNumber += 1;
+  }
+  Character();
+  // console.log(cardNumber);
+}
+function prevCard(){
+  // console.log(cardNumber);
+  if (cardNumber <= 0){
+    cardNumber = 0;
+  }else{
+    cardNumber -= 1;
+  }
+  Character();
+}
 
 const fname = document.getElementById('fname');
 const lname = document.getElementById('lname');
@@ -105,6 +127,7 @@ const connectPage = document.getElementById("connectPage");
 const startLearn = document.getElementById("startLearn");
 const chapterLearn = document.getElementById("chapterLearn");
 const nextPage = document.getElementById("nextPage");
+const endGame = document.getElementById("endGame");
 
 //Set display default for page 
 loadingPage.style.display = "block";
@@ -116,16 +139,18 @@ connectPage.style.display = "none";
 startLearn.onclick = function(){
   loadingPage.style.display = "none";
   homePage.style.display = "block";
+  storefname();
 };
 
 // For loading the characters page
 chapterLearn.onclick = function(){
   homePage.style.display = "none";
   learnPage.style.display = "block";
+  Character();
 };
 
 // For loading the next chapter
-nextPage.onclick = function(){
+endGame.onclick = function(){
   learnPage.style.display = "none";
-  homePage.style.display = "block";
+  connectPage.style.display = "block";
 };

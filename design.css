@@ -13,9 +13,10 @@ html, body{
 }
 
 .imgContact{
-    width: 149px;
-    height: 149px;
+    width: 160px;
+    height: 160px;
     margin: auto auto;
+    display: block;
 }
 
 .image{
@@ -26,6 +27,13 @@ html, body{
 h3{
     text-align: center;
     font-size: 2.5rem;
+    padding:  5px;
+    margin: 0;
+    color: #BC212E;
+}
+h4{
+    text-align: center;
+    font-size: 1.8rem;
     padding:  5px;
     margin: 0;
 }
@@ -55,7 +63,7 @@ input {
 
   .japan{
     width: 313px;
-    height: 76px;
+    height: auto;
     background: #FFF3F4;
     padding: 10px;
     border: solid 3px #BC212E;
@@ -68,6 +76,27 @@ input {
     font-size:30px;
     cursor:pointer;
     overflow-x: hidden;
+  }
+
+  #advChapterLearn{
+    background: rgba(0, 0, 0, 0.358);
+    width: 313px;
+    height: auto;
+    padding: 10px;
+    border: solid 3px #590f15;
+    border-radius: 12px;
+    display: block;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: auto auto;
+    font-size:30px;
+    overflow-x: hidden;
+  }
+
+  .paraStyle{
+    width: 80vw;
+    height: auto;
   }
 
   .highlight{
@@ -86,13 +115,13 @@ input {
     background-color: #ffffff;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
+    padding-top: 20px;
   }
   
   .japanBlurb {
-    padding: 8px 8px 15px 32px;
+    padding: 8px 15px 8px 15px;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 19px;
     color: #000000;
     display: block;
     transition: 0.3s;
@@ -113,14 +142,15 @@ input {
     .sidenav p {font-size: 18px;}
   }
 
-  .container{
-    width: 80%;
+  .containerForm{
+    width: 75%;
     height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
     margin: auto;
+    overflow-x: hidden;
   }
   
   form{
@@ -219,12 +249,37 @@ input {
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
   }
+
+.headingcharacter{
+    font-size: 2.5rem;
+    color:#BC212E;
+    padding: 5px; 
+    text-align: center;
+    font-weight: 800;
+}
+
+.subheadingcharacter{
+    font-size: 1.5rem;
+    color: black;
+    padding: 5px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.footercharacter{
+    font-size: .8rem;
+    color: black;
+    /* padding: 5px; */
+    text-align: right;
+    font-weight: 600;
+}
+
   section {
     position: relative;
-    min-height: 85vh;
+    min-height: 75vh;
     width: 100%;
     background: rgb(255, 255, 255);
-    /* display: flex; */
+    display: flex;
     align-items: center;
     justify-content: center;
     color: #000000;
@@ -261,9 +316,9 @@ input {
   .container .card {
     position: absolute;
     height: 95%;
-    width: 95%;
+    width: 90%;
     top: 15%;
-    left: 0%;
+    left: 5%;
     padding: 25px;
     border-radius: 25px;
     backdrop-filter: blur(25px);

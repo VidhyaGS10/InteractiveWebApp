@@ -4,69 +4,64 @@
     "SubCategory": "Hiragana_a",
     "Image_1": "imgs/a.png",
     "sound": "audioFiles_1/a.mp3",
-    "Image_2": "img/a_stroke.png"
+    "Image_2": "imgs/a_stroke.png"
 },
 {
     "category": "CHARACTER",
     "SubCategory": "Hiragana_i",
     "Image_1": "imgs/i.png",
     "sound": "audioFiles_1/i.mp3",
-    "Image_2": "img/i_stroke.png"
+    "Image_2": "imgs/i_stroke.png"
 },
 {
     "category": "CHARACTER",
     "SubCategory": "Hiragana_u",
     "Image_1": "imgs/u.png",
     "sound": "audioFiles_1/u.mp3",
-    "Image_2": "img/u_stroke.png"
+    "Image_2": "imgs/u_stroke.png"
 },
 {
     "category": "CHARACTER",
     "SubCategory": "Hiragana_e",
     "Image_1": "imgs/e.png",
     "sound": "audioFiles_1/e.mp3",
-    "Image_2": "img/e_stroke.png"
+    "Image_2": "imgs/e_stroke.png"
 },
 {
     "category": "CHARACTER",
     "SubCategory": "Hiragana_o",
     "Image_1": "imgs/o.png",
     "sound": "audioFiles_1/o.mp3",
-    "Image_2": "img/o_stroke.png"
+    "Image_2": "imgs/o_stroke.png"
 },
 {
     "category": "CHARACTER",
     "SubCategory": "Hiragana_ka",
     "Image_1": "imgs/ka.png",
-    "sound": "audioFiles_1/ka.mp3",
-    "Image_2": "img/ka_stroke.png"
+    "Image_2": "imgs/ka_stroke.png"
 },
 {
     "category": "CHARACTER",
     "SubCategory": "Hiragana_ki",
     "Image_1": "imgs/ki.png",
-    "sound": "audioFiles_1/ki.mp3",
-    "Image_2": "img/ki_stroke.png"
+    "Image_2": "imgs/ki_stroke.png"
 },
 {
     "category": "CHARACTER",
     "SubCategory": "Hiragana_ku",
     "Image_1": "imgs/ku.png",
-    "sound": "audioFiles_1/ku.mp3",
-    "Image_2": "img/ku_stroke.png"
+    "Image_2": "imgs/ku_stroke.png"
 },
 {
     "category": "CHARACTER",
     "SubCategory": "Hiragana_ke",
     "Image_1": "imgs/ke.png",
-    "sound": "audioFiles_1/ke.mp3",
-    "Image_2": "img/ke_stroke.png"
+    "Image_2": "imgs/ke_stroke.png"
 },
 {
     "category": "CHARACTER",
     "SubCategory": "Hiragana_ko",
     "Image_1": "imgs/ko.png",
-    "sound": "audioFiles_1/ko.mp3",
-    "Image_2": "img/ko_stroke.png"
+    "Image_2": "imgs/ko_stroke.png"
 }
 ]

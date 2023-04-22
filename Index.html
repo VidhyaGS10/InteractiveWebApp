@@ -21,14 +21,14 @@
         <input type="text" name="NAME" id="fname">
         <br>
         <br>
-        <button type="submit" onclick="storefname() " class="button" id="startLearn">START LEARNING!</button>
+        <button type="submit" class="button" id="startLearn">START LEARNING!</button>
     </div>
 
-    <div class="tab">
+    <!-- <div class="tab">
         <button class="tablinks" onclick="openCity(event, 'homePage')"> HOME </button>
         <button class="tablinks" onclick="openCity(event, 'learn')">LEARN </button>
         <button class="tablinks" onclick="openCity(event, 'connect')">CONNECT</button>
-    </div>
+    </div> -->
     <!-- Home page -->
     <div id="homePage" class="tabcontent">
         <h3 id="greeting"> </h3>
@@ -36,10 +36,10 @@
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <span class="japanBlurb">
-            <h4>JAPAN 日本 </h4>
+            <h3>JAPAN 日本 </h3>
             <br>
-            <h5> Culture, places & more. </h5>
-            <p>
+            <h4> Culture, places & more. </h4>
+            <p class="paraStyle">
                 Japan is a beautiful country famous for its lush landscape, delicious 
                 food, and well-mannered people. Here are some examples of essays about Japan.
                 <br> A developed country in Asia known as the “land of the rising sun,” Japan has become a 
@@ -62,49 +62,58 @@
         <span class="japan" id="chapterLearn">
             <span class="text"> Learn Japanese 
             <br>
-            <span class="highlight">BEGINNER</span>
+                <span class="highlight">BEGINNER</span>
             </span>
-        </a>
+        </span>
+        <br>
+        <br>
+        <span id="advChapterLearn">
+            <span class="text"> Learn Japanese 
+            <br>
+            <span class="highlight">ADVANCED</span>
+            </span>
+        </span>
     </div>
 
     <!-- Learn Tab -->
     <div id="learnPage" class="tabcontent">
+        <div class="headingcharacter">CHARACTER</div>
+        <div class="subheadingcharacter">Hiragana</div>
         <section>
-            <button class="carousel-button prev" data-carousel-button="next">&#8656;</button>
-            <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+            <button class="carousel-button prev" data-carousel-button="next" onclick="prevCard()">&#8656;</button>
+            <button class="carousel-button next" data-carousel-button="next" onclick="nextCard()">&#8658;</button>
             <div class="container">
               <div class="card front-face">
                 <header>
                   <span class="logo">
-                    <br><img src="imgs/a.png" alt="" />          
-                  </span>
+                      <br><img src="imgs/a.png" alt="" id="nextImageFront" />          
+                    </span>
                 </header>
                 
                 <div class="card-details">
-                  <div class="name-number">
+                    <div class="name-number">
                     <h5> tap on the image to flip</h5>
                   </div>
                 </div>
-              </div>
-              
-              <div class="card back-face">
-                <span class="logo">
-                  <img src="imgs/a_stroke.png" alt="" />
-              </span>
-              <br>
-              <h5> tap outside the card to flip it back</h5>
             </div>
-            <span class="nextPage" id="nextPage"> NEXT LESSON </span>
-          </div>
-        </section>
-        <br> 
+            
+            <div class="card back-face">
+                <span class="logo">
+                  <img src="imgs/a_stroke.png" alt="" id="nextImageBack"/>
+                </span>
+                <br>
+                <h5> tap outside the card to flip it back</h5>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <div class="footercharacter" id="endGame">JOIN THE COMMUNITY</div> 
     </div>
 
     <!-- Connect page -->
     <div id="connectPage" class="tabcontent">
-        <div class="container">
-        <img src="imgs/Logo_1.png" alt="Benkyou WebApp Logo" class="imgContact">
-        <br>  
+        <div class="containerForm">
         <form action="#" class="form-contact">
             <h2>Join other learners Today!</h2>
             <input type="text" id="fname" placeholder="First Name">
