@@ -1,4 +1,22 @@
 html, body{
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
+}
+
+.imgrsp{
+    width: 400px;
+    height: auto;
+    margin: auto auto;
+}
+
+.image{
+    align-content: center;
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+    font-size: 2rem;
+    padding:  10px;
 }
